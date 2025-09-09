@@ -1,5 +1,5 @@
 # bump: cjson-version /CJSON_VERSION="(.*)"/ https://github.com/DaveGamble/cJSON.git|semver:*
-CJSON_VERSION="1.7.18" 
+CJSON_VERSION="1.7.19" 
 export ZOPEN_STABLE_TAG="v${CJSON_VERSION}"
 export ZOPEN_STABLE_URL="https://github.com/DaveGamble/cjson.git"
 export ZOPEN_STABLE_DEPS="make cmake"
