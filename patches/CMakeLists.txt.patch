@@ -1,0 +1,20 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c7ca27f..e2661c0 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ set(CMAKE_LEGACY_CYGWIN_WIN32 0)
+-cmake_minimum_required(VERSION 3.0)
++cmake_minimum_required(VERSION 3.0...4.0)
+ 
+ project(cJSON
+     VERSION 1.7.19
+@@ -136,7 +136,7 @@ else()
+     set_target_properties("${CJSON_LIB}-static" PROPERTIES PREFIX "lib")
+ endif()
+ if (NOT WIN32)
+-    target_link_libraries("${CJSON_LIB}" m)
++    target_link_libraries("${CJSON_LIB}" -lm)
+ endif()
+ 
+ configure_file("${CMAKE_CURRENT_SOURCE_DIR}/library_config/libcjson.pc.in"
